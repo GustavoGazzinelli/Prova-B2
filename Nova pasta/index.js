@@ -99,11 +99,16 @@ function QuadradoPerfeito( n ) {
     var i;
     var virgula = '';
     var numer;
-  
+
+    //Calcula quais números são quadrados perfeitos
     for ( i = 1; i <= n; i++ ) {
       numer = Math.sqrt( i );
       if ( numer == Math.floor( numer ) ) {
+        
+        //Adiciona virgula entre os numeros pra separar bonitinho
         virgula += i + ', ';
+
+
       } else {
     
       }
@@ -114,3 +119,4 @@ function QuadradoPerfeito( n ) {
   function botaoqua() {
     alert(QuadradoPerfeito(1000));
   }
+  //FIM DA QUESTÂO 4
